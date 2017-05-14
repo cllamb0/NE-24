@@ -115,4 +115,38 @@ What does \emph{cp} do when given three or more filenames, as in:
 \end{center}
 \vskip.25in
 
+\begin{enumerate}
+%Question 1, Section 3
+\item If we run \emph{sort} on this file:
+\begin{flushleft}
+\texttt{10 \\ 2 \\ 19 \\ 22 \\ 6}
+\end{flushleft}
+the output is:
+\begin{flushleft}
+\texttt{10 \\ 19 \\ 2 \\ 22 \\ 6}
+\end{flushleft}
+If we run \emph{sort -n} on the same input, we get this instead:
+\begin{flushleft}
+\texttt{2 \\ 6 \\ 10 \\ 19 \\ 22}
+\end{flushleft}
+Explain why \emph{-n} has this effect:
+\begin{center}
+\textsf{\underline{Answer:} The first time it sorts, it goes through the first digit and then goes through the number as a whole.}
+\end{center}
+
+%Question 2, Section 3
+\item What is the difference between:
+\begin{flushleft}
+\texttt{wc -l < mydata.dat}
+\end{flushleft}
+and:
+\begin{flushleft}
+\texttt{wc -l mydata.dat}
+\end{flushleft}
+\begin{center}
+\textsf{\underline{Answer:} The first one will read the data from the standard input and send the output to mydata.dat while the second one will just take mydata.dat as the input.}
+\end{center}
+
+%Question 3, Section 3
+\end{enumerate}
 \end{document}
