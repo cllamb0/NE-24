@@ -29,7 +29,7 @@
 %Question 2, Section 1
 \item For a hypothetical filesystem location of \emph{/home/amanda/data/}, select each of the below commands that Amanda could use to navigate to her home directory, which is \emph{/home/amanda}
 \begin{center}
-\textsf{\underline{Answer:} cd \~{} \textit{or}  cd ..  \textit{or}  cd}
+\textsf{\underline{Answer:} cd /home/amanda \textit{or} cd \~{} \textit{or}  cd ..  \textit{or}  cd}
 \end{center}
 
 %Question 3, Section 1
@@ -98,7 +98,7 @@ What does \emph{cp} do when given three or more filenames, as in:
 \texttt{\$ ls -F \\ intro.txt    methods.txt    survey.txt \\ \$ cp intro.txt methods.txt survey.txt}
 \end{flushleft}
 \begin{center}
-\textsf{\underline{Answer:} When given multiple filenames, it will copy and move those multiple files into the chosen directory.}
+\textsf{\underline{Answer:} When given multiple filenames, it will copy and move those multiple files into the chosen directory. The second command gives an error because it is trying to move the files to a folder but no folder was given.}
 \end{center}
 
 %Question 5, Section 2
@@ -113,5 +113,6 @@ What does \emph{cp} do when given three or more filenames, as in:
 \begin{center}
 \textbf{Section 3: Pipes and Filters}
 \end{center}
+\vskip.25in
 
 \end{document}
