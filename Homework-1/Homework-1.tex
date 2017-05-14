@@ -15,7 +15,7 @@
 %Section 1 Title
 \vskip.4in
 \begin{center}
-\textbf{Shell Files and Directories: Challenge Questions} 
+\textbf{Section 1: Shell Files and Directories} 
 \end{center}
 \vskip.25in
 
@@ -23,43 +23,95 @@
 %Question 1, Section 1
 \item If \emph{pwd} displays \emph{/Users/thing}, what will \emph{ls ../backup} display?
 \begin{center}
-\texttt{\underline{Answer:} ../backup: No such file or directory}
+\textsf{\underline{Answer:} ../backup: No such file or directory}
 \end{center}
 
 %Question 2, Section 1
 \item For a hypothetical filesystem location of \emph{/home/amanda/data/}, select each of the below commands that Amanda could use to navigate to her home directory, which is \emph{/home/amanda}
 \begin{center}
-\texttt{\underline{Answer:} cd \~{} \textit{or}  cd ..  \textit{or}  cd}
+\textsf{\underline{Answer:} cd \~{} \textit{or}  cd ..  \textit{or}  cd}
 \end{center}
 
 %Question 3, Section 1
 \item If \emph{pwd} displays \emph{/Users/backup}, and \emph{-r} tells \emph{ls} to display things in reverse order, what command will display: \\ \emph{pnas-sub/ pnas-finals/ original/}
 \begin{center}
-\texttt{\underline{Answer:} ls -r -F /Users/backup}
+\textsf{\underline{Answer:} ls -r -F /Users/backup}
 \end{center}
 
 %Question 4, Section 1
 \item What does the command \emph{cd} without a directory name do?
 \begin{center}
-\texttt{\underline{Answer:} It changes the working directory to the user's home directory.}
+\textsf{\underline{Answer:} It changes the working directory to the user's home directory.}
 \end{center}
 
 %Question 5, Section 1
 \item What does the command \emph{ls} do when used with the \emph{-s} and \emph{-h} arguments?
 \begin{center}
-\texttt{\underline{Answer:} When –s is used with ls, it shows the sizes of the files in blocks and when –h is used with ls, it does nothing different than a normal ls.}
+\textsf{\underline{Answer:} When –s is used with ls, it shows the sizes of the files in blocks and when –h is used with ls, it does nothing different than a normal ls.}
 \end{center}
 \end{enumerate}
-\vskip.4in
 
 %Section 2 Title
+\vskip.4in
 \begin{center}
-\textbf{Creating Things: Challenge Questions}
+\textbf{Section 2: Creating Things}
+\end{center}
+\vskip.25in
+
+\begin{enumerate}
+%Question 1, Section 2
+\item Suppose that you created a \emph{.txt} file in your current directory to contain a list of the statistical tests you will need to do to analyze your data, and named it: \emph{statstics.txt} \\ \\ After creating and saving this file you realize you misspelled the filename! You want to correct the mistake, which of the following commands could you use to do so?
+\begin{center}
+\textsf{\underline{Answer:} cp statstics.txt statistics.txt}
 \end{center}
 
-%Section 3 Title
+%Question 2, Section 2
+\item What is the output of the closing \emph{ls} command in the sequence shown below?
+\begin{flushleft}
+\texttt {\$ pwd \\ /Users/jamie/data \\ \$ ls \\ proteins.dat \\ \$ mkdir recombine \\ 
+\$ mv proteins.dat recombine \\ \$ cp recombine/proteins.dat ../proteins-saved.dat \\ \$ ls}
+\end{flushleft}
 \begin{center}
-\textbf{Pipes and Filters: Challenge Questions}
+\textsf{\underline{Answer:} recombine}
+\end{center}
+
+%Question 3, Section 2
+\item Jamie is working on a project and she sees that her files aren’t very well organized:
+\begin{flushleft}
+\texttt{\$ ls -F \\ analyzed/  fructose.dat    raw/   sucrose.dat}
+\end{flushleft}
+The \emph{fructose.dat} and \emph{sucrose.dat} files contain output from her data analysis. What command(s) covered in this lesson does she need to run so that the commands below will produce the output shown?
+\begin{flushleft}
+\texttt{\$ ls -F \\ analyzed/   raw/ \\ \$ ls analyzed \\ fructose.dat    sucrose.dat}
+\end{flushleft}
+\begin{center}
+\textsf{\underline{Answer:} mv fructose.dat /analyzed \\ mv sucrose.dat /analyzed}
+\end{center}
+
+%Question 4, Section 2
+\item What does \emph{cp} do when given several filenames and a directory name, as in:
+\begin{flushleft}
+\texttt{\$ mkdir backup \\ \$ cp thesis/citations.txt thesis/quotations.txt backup}
+\end{flushleft}
+What does \emph{cp} do when given three or more filenames, as in:
+\begin{flushleft}
+\texttt{\$ ls -F \\ intro.txt    methods.txt    survey.txt \\ \$ cp intro.txt methods.txt survey.txt}
+\end{flushleft}
+\begin{center}
+\textsf{\underline{Answer:} When given multiple filenames, it will copy and move those multiple files into the chosen directory.}
+\end{center}
+
+%Question 5, Section 2
+\item The command \emph{ls -R} lists the contents of directories recursively, i.e., lists their sub-directories, sub-sub-directories, and so on in alphabetical order at each level. The command \emph{ls -t} lists things by time of last change, with most recently changed files or directories first. In what order does \emph{ls -R -t} display things?
+\begin{center}
+\textsf{\underline{Answer:} Typing ls -R -t will give the full directories in order alphabetically and in order of most recently edited.}
+\end{center}
+\end{enumerate}
+
+%Section 3 Title
+\vskip.4in
+\begin{center}
+\textbf{Section 3: Pipes and Filters}
 \end{center}
 
 \end{document}
