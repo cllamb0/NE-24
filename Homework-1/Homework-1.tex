@@ -9,22 +9,44 @@
 \end{center}
 \noindent\rule{14cm}{1pt}
 
-\vskip.5in
+\vskip.4in
 \begin{center}
 \textbf{Shell Files and Directories: Challenge Questions\\} 
 \end{center}
 \vskip.25in
 
 \begin{enumerate}
+%Question 1, Section 1
 \item If \emph{pwd} displays \emph{/Users/thing}, what will \emph{ls ../backup} display?
-\begin{alltt}
+\begin{center}
 \underline{Answer:} ../backup: No such file or directory
-\end{alltt}
+\end{center}
+
+%Question 2, Section 1
 \item For a hypothetical filesystem location of \emph{/home/amanda/data/}, select each of the below commands that Amanda could use to navigate to her home directory, which is \emph{/home/amanda}
-\begin{alltt}
-\underline{Answer:} cd ~  \textit{or}  cd ..  \textit{or}  cd
-\end{alltt}
+\begin{center}
+\underline{Answer:} cd ~ \textit{or}  cd ..  \textit{or}  cd
+\end{center}
+
+%Question 3, Section 1
+\item If \emph{pwd} displays \emph{/Users/backup}, and \emph{-r} tells \emph{ls} to display things in reverse order, what command will display: \\ \emph{pnas-sub/ pnas-finals/ original/}
+\begin{center}
+\underline{Answer:} ls -r -F /Users/backup
+\end{center}
+
+%Question 4, Section 1
+\item What does the command \emph{cd} without a directory name do?
+\begin{center}
+\underline{Answer:} It changes the working directory to the user's home directory.
+\end{center}
+
+%Question 5, Section 1
+\item What does the command \emph{ls} do when used with the \emph{-s} and \emph{-h} arguments?
+\begin{center}
+\underline{Answer:} When –s is used with ls, it shows the sizes of the files in blocks and when –h is used with ls, it does nothing different than a normal ls.
+\end{center}
 \end{enumerate}
+\vskip.4in
 
 \begin{center}
 \textbf{Creating Things: Challenge Questions\\}
