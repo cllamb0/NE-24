@@ -181,5 +181,30 @@ Why do you think \emph{uniq} only removes adjacent duplicated lines? (Hint: thin
 \end{center}
 
 %Question 6, Section 3
+\item A file called \emph{animals.txt} contains the following data:
+\begin{flushleft}
+\texttt{2012-11-05,deer \\ 2012-11-05,rabbit \\ 2012-11-05,raccoon \\ 2012-11-06,rabbit \\ 2012-11-06,deer \\ 2012-11-06,fox \\ 2012-11-07,rabbit \\ 2012-11-07,bear}
+\end{flushleft}
+What text passes through each of the pipes and the final redirect in the pipeline below?
+\begin{flushleft}
+\texttt{cat animals.txt | head -5 | tail -3 | sort -r > final.txt}
+\end{flushleft}
+\begin{center}
+\textsf{\underline{Answer:} The first pipe takes the first 5 lines then the next pipe takes the last three of the remaining 5. The third pipe reverses the order of the lines and makes a new file called final.txt and outputs the result in there.}
+\end{center}
+
+%Question 7, Section 3
+\item The command:
+\begin{flushleft}
+\texttt{\$ cut -d , -f 2 animals.txt}
+\end{flushleft}
+produces the following output:
+\begin{flushleft}
+\texttt{deer \\ rabbit \\ raccoon \\ rabbit \\ deer \\ fox \\ rabbit \\ bear}
+\end{flushleft}
+What other command(s) could be added to this in a pipeline to find out what animals the file contains (without any duplicates in their names)?
+\begin{center}
+\textsf{\underline{Answer:} The entire command would be: cut -d , -f 2 animals.txt} \texttt{|} \textsf{sort –n} \texttt{|} \textsf{uniq}
+\end{center}
 \end{enumerate}
 \end{document}
