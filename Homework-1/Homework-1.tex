@@ -1,13 +1,30 @@
 \documentclass[12pt]{article}
+\usepackage{alltt}
 \author{Chris Lamb}
 \date{2 February, 2017}
 \title{NE-24 Homework 1}
 \begin{document}
-\maketitle
+\begin{center}
+\textbf{NE 24 - Homework 1 \\ Chris Lamb \\ 2 February, 2017}
+\end{center}
+\noindent\rule{14cm}{1pt}
 
+\vskip.5in
 \begin{center}
 \textbf{Shell Files and Directories: Challenge Questions\\} 
 \end{center}
+\vskip.25in
+
+\begin{enumerate}
+\item If \emph{pwd} displays \emph{/Users/thing}, what will \emph{ls ../backup} display?
+\begin{alltt}
+\underline{Answer:} ../backup: No such file or directory
+\end{alltt}
+\item For a hypothetical filesystem location of \emph{/home/amanda/data/}, select each of the below commands that Amanda could use to navigate to her home directory, which is \emph{/home/amanda}
+\begin{alltt}
+\underline{Answer:} cd ~  \textit{or}  cd ..  \textit{or}  cd
+\end{alltt}
+\end{enumerate}
 
 \begin{center}
 \textbf{Creating Things: Challenge Questions\\}
