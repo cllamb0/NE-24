@@ -144,9 +144,42 @@ and:
 \texttt{wc -l mydata.dat}
 \end{flushleft}
 \begin{center}
-\textsf{\underline{Answer:} The first one will read the data from the standard input and send the output to mydata.dat while the second one will just take mydata.dat as the input.}
-\end{center}
+\textsf{\underline{Answer:} The first one will read the data from the standard input and send the output to mydata.dat while the second one will just take mydata.dat as the input.}\end{center}
 
 %Question 3, Section 3
+\item What is the difference between:
+\begin{flushleft}
+\texttt{echo hello > testfile01.txt}
+\end{flushleft}
+and:
+\begin{flushleft}
+\texttt{echo hello >> testfile02.txt}
+\end{flushleft}
+Hint: Try executing each command twice in a row and then examining the output files.
+\begin{center}
+\textsf{\underline{Answer:} The first one will only place the new data in the file and replace the old data while the second one will continuously add “hello” as many times as you put the command in.}
+\end{center}
+
+%Question 4, Section 3
+\item In our current directory, we want to find the 3 files which have the least number of lines. Which command listed below would work?
+\begin{center}
+\textsf{\underline{Answer:} wc -l * | sort -n | head -3}
+\end{center}
+
+%Question 5, Section 3
+\item The command \emph{uniq} removes adjacent duplicated lines from its input. For example, if a file \emph{salmon.txt} contains:
+\begin{flushleft}
+\texttt{coho \\ coho \\ steelhead \\ coho \\ steelhead \\ steelhead}
+\end{flushleft}
+then \emph{uniq salmon.txt} produces:
+\begin{flushleft}
+\texttt{coho \\ steelhead \\ coho \\ steelhead}
+\end{flushleft}
+Why do you think \emph{uniq} only removes adjacent duplicated lines? (Hint: think about very large data sets.) What other command could you combine with it in a pipe to remove all duplicated lines?
+\begin{center}
+\textsf{\underline{Answer:} It’s easier to check if the current line is the same as the next or previous line than it is to compare it to the whole data set especially when the whole set is giant. To remove all of the same lines in the whole dataset, organize the set alphabetically with sort and then use uniq.}
+\end{center}
+
+%Question 6, Section 3
 \end{enumerate}
 \end{document}
