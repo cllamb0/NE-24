@@ -5,6 +5,37 @@
 \title{NE-24 Homework \#2}
 
 \begin{document}
-\maketitle
+\begin{center}
+%Assignment Header
+\textbf{NE 24 - Homework \#2 \\ Chris Lamb \\ 13 February, 2017}
+\end{center}
+\noindent\rule{17cm}{1pt}
+
+%Section 1 Title
+\vskip.4in
+\begin{center}
+\underline{\textbf{Section 1: Creating a Repository}}
+\end{center}
+\vskip.25in
+
+\begin{enumerate}
+%Question 1, Section 1
+\item Dracula starts a new project, \emph{moons}, related to his \emph{planets} project. Despite Wolfwoman’s concerns, he enters the following sequence of commands to create one Git repository inside another:
+\begin{flushleft}
+\texttt{cd             \# return to home directory \\ mkdir planets  \# make a new directory planets \\ cd planets     \# go into planets \\ git init       \# make the planets directory a Git repository \\ mkdir moons    \# make a sub-directory planets/moons \\ cd moons       \# go into planets/moons \\ git init       \# make the moons sub-directory a Git repository}
+\end{flushleft}
+Why is it a bad idea to do this? How can Dracula "undo" his last \emph{git init}?
+\begin{center}
+\textsf{\underline{Answer:} It’s a bad idea to do this because when the repositories are nested inside of each other, they mess with each other and cause errors. To fix this error, you can remove the .git repository with rm –rf moons/.git}
+\end{center}
+\end{enumerate}
+
+%Section 2 Title
+\vskip.4in
+\begin{center}
+\underline{\textbf{Section 2: Tracking Changes}}
+\end{center}
+\vskip.25in 
+
 
 \end{document}
