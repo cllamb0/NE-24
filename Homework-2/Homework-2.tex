@@ -1,5 +1,6 @@
 \documentclass[12pt]{article}
 \usepackage[top=0.75in, bottom=0.75in, left=1in, right=1in]{geometry}
+\usepackage{hyperref}
 \author{Chris Lamb}
 \date{13 February, 2017}
 \title{NE-24 Homework \#2}
@@ -37,5 +38,29 @@ Why is it a bad idea to do this? How can Dracula "undo" his last \emph{git init}
 \end{center}
 \vskip.25in 
 
+\begin{enumerate}
+%Question 1, Section 2
+\item Which command(s) below would save the changes of \emph{myfile.txt} to my local Git repository?
+\begin{flushleft}
+\texttt{\$ git commit -m "my recent changes"}
+\end{flushleft}
+\begin{flushleft}
+\texttt{\$ git init myfile.txt \\ \$ git commit -m "my recent changes"}
+\end{flushleft}
+\begin{flushleft}
+\texttt{\$ git add myfile.txt \\ \$ git commit -m "my recent changes"}
+\end{flushleft}
+\begin{flushleft}
+\texttt{\$ git commit -m myfile.txt "my recent changes"}
+\end{flushleft}
+\begin{center}
+\textsf{\underline{Answer:} \$ git add myfile.txt \\ \$ git commit -m "my recent changes"}
+\end{center}
 
+%Question 2, Section 2
+\item Create a new Git repository on your computer called \emph{bio}. Write a three-line biography for yourself in a file called \emph{me.txt}, commit your changes, then modify one line, add a fourth line, and display the differences between its updated state and its original state.
+\begin{center}
+\textsf{\underline{Answer:} Here's a screenshot of the answer: \href{http://i.imgur.com/xvGHjaE.png}{http://i.imgur.com/xvGHjaE.png}}
+\end{center}
+\end{enumerate}
 \end{document}
