@@ -1,6 +1,8 @@
-## LaTeX file extensions
+## LaTeX file Extensions
 *.aux
 *.log
 *.out
-## iPython Notebook extensions
+## iPython Notebook Extensions
 *.ipynb_checkpoints/
+## Miscellaneous Python Testing Extensions
+__pycache__/
