@@ -57,6 +57,7 @@ class NumJellyEstimator:
 
 
     ## Set the fraction of people who love the color pink.
+    # \param frac fraction of people in the world who love the color pink (float between 0 and 1)
     def set_frac_ppl_loving_pink(self, frac):
 
         # NE24: Add a test for type here
@@ -90,7 +91,9 @@ class NumJellyEstimator:
         return int(n)
 
 
-    ## Estimate the number of jelly beans in the world using the new pink data.
+    ## Estimate the number of jelly beans in the world using the fraction
+    # of people who love the color pink. This is the new aspect of the calculation
+    # and provides a more accurate result than the compute_Njelly_est_nopink function.
     def compute_Njelly_est(self):
 
         n = self.fracLand4Sugar * self.worldPop * self.scalingConst / \
