@@ -1,7 +1,35 @@
 \documentclass[12pt]{article}
+\usepackage[top=0.75in, bottom=0.75in, left=1in, right=1in]{geometry}
+\usepackage{hyperref}
 \author{Chris Lamb}
 \date{20 February, 2017}
 \title{NE-24 Homework \#3}
+
 \begin{document}
-\maketitle
+\begin{center}
+%Assignment Header
+\textbf{NE 24 - Homework \#3 \\ Chris Lamb \\ 20 February, 2017}
+\end{center}
+\noindent\rule{17cm}{1pt}
+
+%Section 1 Title
+\vskip.4in
+\begin{center}
+\underline{\textbf{Section 1: Conflicts}}
+\end{center}
+\vskip.25in
+
+\begin{enumerate}
+%Question 1, Section 1
+\item Clone the repository created by your instructor. Add a new file to it, and modify an existing file (your instructor will tell you which one). When asked by your instructor, pull her changes from the repository to create a conflict, then resolve it.
+\begin{center}
+\textsf{\underline{Answer:} Here's a screenshot of before the resolution of the merge conflict: \href{http://i.imgur.com/Uur7Jfx.png}{http://i.imgur.com/Uur7Jfx.png} \\ and here's a screenshot of after the resolution of the conflict: \href{http://i.imgur.com/camDWKf.png}{http://i.imgur.com/camDWKf.png}}
+\end{center}
+
+%Question 2, Section 1
+\item What does Git do when there is a conflict in an image or some other non-textual file that is stored in version control?
+\begin{center}
+\textsf{\underline{Answer:} If there is a conflict in for example an image, then the image cannot be edited in the same way that a text file can. Instead of editing the photos, you will have to choose which version of the photo that you want to keep. Either way, you would use \emph{git checkout} to choose which version of the photo that you want to be in the remote.}
+\end{center}
+\end{enumerate}
 \end{document}
