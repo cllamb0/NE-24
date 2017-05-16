@@ -6,3 +6,6 @@
 *.ipynb_checkpoints/
 ## Miscellaneous Python Testing Extensions
 __pycache__/
+## Folders Created by Doxygen
+Homework-7/Documentation/html
+Homework-7/Documentation/latex
