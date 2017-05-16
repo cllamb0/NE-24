@@ -5,7 +5,7 @@ import sys
 ## This class estimates the number of jelly beans in the world using input data
 # determined to be correlated to this result.
 # The number of jelly beans in the world is correlated to the fraction
-# of land used for sugar, the world population, and the fraction of 
+# of land used for sugar, the world population, and the fraction of
 # people who like the color pink.
 class NumJellyEstimator:
 
@@ -45,9 +45,13 @@ class NumJellyEstimator:
     def set_world_pop(self, people):
 
         # NE24: Add a test for type here
- 
+        assert type(frac) is float, \
+            "Error: fraction of people loving pink must be a float."
         # NE24: Add a test for value here
-
+        assert people > 0, \
+             "Error: There probably should be more people than that."
+        assert people < 25000000000, \
+             "Error: I don't think that the ecosystem can handle that many people."
         # Store the fraction.
         self.worldPop = people
 
@@ -56,9 +60,13 @@ class NumJellyEstimator:
     def set_frac_ppl_loving_pink(self, frac):
 
         # NE24: Add a test for type here
-
+        assert type(frac) is float, \
+             "Error: fraction of people loving pink must be a float."
         # NE24: Add a test for value here
-
+        assert frac > 0, \
+             "Error: A percentage can't be lower than 0%"
+        assert frac < 1, \
+             "Error: A percentage can't be higher than 100%"
         # Store the fraction.
         self.fracPplLovingPink = frac
 
@@ -96,5 +104,3 @@ class NumJellyEstimator:
         # NE24: What other checks might be useful? What is a better way to do this?
 
         return int(n)
-
-
