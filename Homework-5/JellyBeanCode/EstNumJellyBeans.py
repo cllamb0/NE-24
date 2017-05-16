@@ -103,4 +103,12 @@ class NumJellyEstimator:
 
         # NE24: What other checks might be useful? What is a better way to do this?
 
+        # So far within the set_world_pop and the set_frac_ppl_loving_pink functions,
+        # I implemented assertion tests to check for TypeErrors and ValueErrors. Another
+        # type of error that can be tested is a NameError. While this may not be entirely
+        # useful in this case, it is useful to make sure that variables are not called
+        # upon that were not defined within the function (can also be sloved with nonlocal).
+        # An easier way to create these checks would be to use the try/except which would
+        # run a certain set of code unless an exception is raised. This exception can be
+        # decided by the user to hopefully make the code run more seamlessly.
         return int(n)
