@@ -2,3 +2,5 @@
 *.aux
 *.log
 *.out
+## iPython Notebook extensions
+*.ipynb_checkpoints/
