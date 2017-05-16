@@ -1,6 +1,6 @@
-##NE24 Homework #7: Documentation
-####Chris Lamb
-####April 10, 2017
+## NE 24 Homework #7 
+#### Chris Lamb
+#### 10 April, 2017
 I found this article very useful to me:
 https://docs.python.org/3/tutorial/classes.html
 # 
