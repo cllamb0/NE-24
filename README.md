@@ -1,7 +1,11 @@
-# NE-24
+## NE-24: Putting the Science in Computational Science
 Compiled repository from all my previous NE 24 repositories
 
-This repository will eventually consist of:
+Most of the forked information is from [Rachel Slaybaugh](https://github.com/rachelslaybaugh/NE24), the professor of my NE-24 class.
+
+The final project repository is forked from the [Plinth](https://github.com/freedombox/Plinth) repository.
+
+This repository consists of:
 
 | Assignment      | Date Due   |
 |:---------------:|:----------:|
